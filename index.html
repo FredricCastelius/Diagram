@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Koll - Ditt företags ekonomi</title>
+	
+	<link rel="icon" sizes="192x192" href="img/touch-icon.png" /> 
+	<link rel="apple-touch-icon" href="img/touch-icon-iphone.png" /> 
+	<link rel="apple-touch-icon" sizes="76x76" href="img/touch-icon-ipad.png" /> 
+	<link rel="apple-touch-icon" sizes="120x120" href="img/touch-icon-iphone-retina.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad-retina.png" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+
+	<meta name="robots" content="noindex">
+	
+</head>
+<body class="bg1">
+	
+	<div class="wrapper">
+		
+		<section class="content">
+			<header class="main-header">
+				<div class="main-header__nav">
+					<h1 class="main-header__title">
+						<i class="pe-7f-home"></i>
+						<span>Koll</span>
+					</h1>
+					<ul class="main-header__breadcrumb">
+						<li>Så här mår ditt bolag.</li>
+					</ul>
+				</div>
+				
+				<div class="main-header__date">
+					<input type="radio" id="radio_date_1" name="tab-radio" value="yesterday" checked><!--
+					--><label class="fixed-width" for="radio_date_1">Oktober</label><!--
+					
+					--><input type="radio" id="radio_date_2" name="tab-radio" value="today">
+					<!--
+					--><label class="fixed-width" for="radio_date_2">November</label>
+					<!--
+					--><button>
+						<i class="pe-7f-date"></i>
+						<span>Feb 26 2014</span>
+					</button>
+				</div>
+			</header> <!-- /main-header -->
+
+			<div data-tab-radio="tab-radio" class="tab-radio-content row" id="today">
+					<div class="main-stats__stat col-md-3 col-sm-3">
+						<h3 class="main-stats__title">Summering<br> av november.</h3>
+						<p class="main-stats__resume" style="background: rgba(83, 215, 105, 0.6); line-height: 1.5rem; padding: 0.5rem;"><span style="">Snyggt jobbat! Ert bolag går 27.45% med vinst där resultatet ligger på +13845kr</span></p>
+						<br>
+						<button class="btn yellow fixed" style="width: 200px;">Skatteplanera ›</button>
+						
+					</div> <!-- /col -->
+
+					<div class="main-stats__stat col-md-3 col-sm-3 col-xs-4">
+						<div class="stat-circle">
+							<h3>20tkr</h3>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+								<circle style="opacity:0.16;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" cx="46" cy="46" r="45"/>
+								<path style="fill:none;stroke:#53d769;stroke-width:2;stroke-miterlimit:10;" d="M6.185,66.968C13.725,81.256,28.721,91,46,91c24.853,0,45-20.147,45-45C91,21.147,70.853,1,46,1"/>
+							</svg>
+						</div> <!-- /stat-circle -->
+						<h4 class="main-stats__subtitle">Vinst<br>
+							<span class="main-stats__resume">+ 125%</span>
+						</h4>
+					</div> <!-- /col -->
+				  
+				  <div class="main-stats__stat col-md-3 col-sm-3 col-xs-4">
+						<div class="stat-circle">
+							<h3>210tkr</h3>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+								<circle style="opacity:0.16;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" cx="46" cy="46" r="45"/>
+								<path style="fill:none;stroke:#1c7dfa;stroke-width:2;stroke-miterlimit:10;" d="M84.839,68.718C88.749,62.049,91,54.289,91,46C91,21.147,70.853,1,46,1"/>
+							</svg>
+						</div> <!-- /stat-circle -->
+						<h4 class="main-stats__subtitle">Omsättning<br>
+							<span class="main-stats__resume">+ 43%</span>
+						</h4>
+					</div> <!-- /col -->
+
+					<div class="main-stats__stat col-md-3 col-sm-3 col-xs-4">
+						<div class="stat-circle">
+							<h3>194tkr</h3>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+							<circle style="opacity:0.16;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" cx="46" cy="46" r="45"/>
+							<path style="fill:none;stroke:#f35857;stroke-width:2;stroke-miterlimit:10;" d="M6.185,66.968C13.725,81.256,28.721,91,46,91c24.853,0,45-20.147,45-45C91,21.147,70.853,1,46,1"/>
+							</svg>
+						</div> <!-- /stat-circle -->
+						<h4 class="main-stats__subtitle">Kostnader<br>
+							<span class="main-stats__resume">- 5%</span>
+						</h4>
+
+					</div> <!-- /col -->
+
+				</div> <!-- row -->
+
+				<div data-tab-radio="tab-radio" class="tab-radio-content row" id="yesterday">
+					<div class="main-stats__stat col-md-3 col-sm-3">
+						<h3 class="main-stats__title">Summering<br> av oktober.</h3>
+						<p class="main-stats__resume" style="background: rgba(243, 88, 87, 0.6); line-height: 1.5rem; padding: 0.5rem;"><span style="">Ert bolag går -27.45% med förlust + att ni har 5st obetalade leverantörsfaktuor på totalt 134000kr. Med nuvarande omsättning innebär detta ett resultat på -182320kr i nästa månad.</span></p>
+						<br>
+						<button class="btn green fixed" style="width: 200px;">Finansieringslösningar ›</button>
+						
+					</div> <!-- /col -->
+				  
+				  <div class="main-stats__stat col-md-3 col-sm-3 col-xs-4">
+						<div class="stat-circle">
+							<h3>- 10tkr</h3>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+								<circle style="opacity:0.16;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" cx="46" cy="46" r="45"/>
+								<path style="fill:none;stroke:#53d769;stroke-width:2;stroke-miterlimit:10;" d="M6.185,66.968C13.725,81.256,28.721,91,46,91c24.853,0,45-20.147,45-45C91,21.147,70.853,1,46,1"/>
+							</svg>
+						</div> <!-- /stat-circle -->
+						<h4 class="main-stats__subtitle">Vinst<br>
+							<span class="main-stats__resume">+ 0%</span>
+						</h4>
+					</div> <!-- /col -->
+				  
+				  <div class="main-stats__stat col-md-3 col-sm-3 col-xs-4">
+						<div class="stat-circle">
+							<h3>180tkr</h3>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+								<circle style="opacity:0.16;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" cx="46" cy="46" r="45"/>
+								<path style="fill:none;stroke:#1c7dfa;stroke-width:2;stroke-miterlimit:10;" d="M84.839,68.718C88.749,62.049,91,54.289,91,46C91,21.147,70.853,1,46,1"/>
+							</svg>
+						</div> <!-- /stat-circle -->
+						<h4 class="main-stats__subtitle">Omsättning<br>
+							<span class="main-stats__resume">+ 65%</span>
+						</h4>
+					</div> <!-- /col -->
+
+					<div class="main-stats__stat col-md-3 col-sm-3 col-xs-4">
+						<div class="stat-circle">
+							<h3>144tkr</h3>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+							<circle style="opacity:0.16;fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" cx="46" cy="46" r="45"/>
+							<path style="fill:none;stroke:#f35857;stroke-width:2;stroke-miterlimit:10;" d="M6.185,66.968C13.725,81.256,28.721,91,46,91c24.853,0,45-20.147,45-45C91,21.147,70.853,1,46,1"/>
+							</svg>
+						</div> <!-- /stat-circle -->
+						<h4 class="main-stats__subtitle">Kostnader<br>
+							<span class="main-stats__resume">+ 5%</span>
+						</h4>
+
+					</div> <!-- /col -->
+
+				</div> <!-- row -->
+
+
+				<div class="row">
+					<div class="col-md-12">
+						<div id="chartdiv" style="width: 100%; height: 362px;"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					
+					<div class="col-md-12">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7s-display2"></i><h3>Utgående fakturor</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"></a>
+									<a href="#"></a>
+								</div>
+							</header>
+							
+							<div class="widget__content filled table-responsive pad20">
+								
+										
+								<table class="table  media-table">
+							  	<thead>
+							  		<tr>
+							  			<th>NR</th>
+							  			<th>Mottagare</th>
+							  			<th class="" width="100">Förfallodatum</th>
+							  			<th class="">Belopp</th>
+							  			<th class="">Status</th>
+							  		</tr>
+							  	</thead>
+							  	<tbody>
+
+							  	
+							  		
+							  		<tr>
+							  			<td class="">
+							  				401
+							  			</td>
+							  			<td class="">
+							  				Badass business AB
+							  			</td>
+							  			<td>
+							  				22 Nov 2014
+							  			</td>
+							  			<td>
+							  				2000kr
+							  			</td>
+							  			<td>
+							  				<button class="btn yellow fixed inverse">Mottagen</button>
+							  			</td>
+							  			<td>
+							  				<button class="btn green fixed">Sälj</button>
+							  			</td>
+							  		</tr>
+							  		
+							  		<tr>
+							  			<td class="">
+							  				400
+							  			</td>
+							  			<td class="">
+							  				Super duper AB
+							  			</td>
+							  			<td>
+							  				16 Nov 2014
+							  			</td>
+							  			<td>
+							  				39432.90kr
+							  			</td>
+							  			<td>
+							  				<button class="btn red fixed inverse">Obetald</button>
+							  			</td>
+							  			<td>
+							  				<button class="btn green fixed">Sälj</button>
+							  			</td>
+							  		</tr>
+							  		
+							  		<tr>
+							  			<td class="">
+							  				399
+							  			</td>
+							  			<td class="">
+							  				Insanely good goods AB
+							  			</td>
+							  			<td>
+							  				14 Nov 2014
+							  			</td>
+							  			<td>
+							  				1999kr
+							  			</td>
+							  			<td>
+							  				<button class="btn green fixed inverse">Betalad</button>
+							  			</td>
+							  		</tr>
+							  		
+							  		<tr>
+							  			<td class="">
+							  				398
+							  			</td>
+							  			<td class="">
+							  				Super duper AB
+							  			</td>
+							  			<td>
+							  				10 Nov 2014
+							  			</td>
+							  			<td>
+							  				30000kr
+							  			</td>
+							  			<td>
+							  				<button class="btn green fixed inverse">Betalad</button>
+							  			</td>
+							  		</tr>
+
+							  	
+
+							  	</tbody>
+								</table>
+								
+								
+							</div> <!-- /widget__content -->
+
+						</article><!-- /widget -->
+					</div>
+				</div>
+
+				<div class="row">
+					
+					<div class="col-md-12">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7s-display2"></i><h3>Inkommande kostnader</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"></a>
+									<a href="#"></a>
+								</div>
+							</header>
+							
+							<div class="widget__content filled table-responsive pad20">
+								
+										
+								<table class="table  media-table">
+							  	<thead>
+							  		<tr>
+							  			<th>NR</th>
+							  			<th class="" width="100">Datum</th>
+							  			<th class="" width="100">Förfallodatum</th>
+							  			<th class="">Belopp</th>
+							  			<th>Från</th>
+							  			<th>Typ</th>
+							  			<th class="">Status</th>
+							  		</tr>
+							  	</thead>
+							  	<tbody>
+
+							  	
+							  		
+
+							  		<tr>
+							  			<td class="">
+							  				1233
+							  			</td>
+							  			<td class="">
+							  				23 Nov 2014
+							  			</td>
+							  			<td>
+							  				23 Dec 2014
+							  			</td>
+							  			<td>
+							  				199kr
+							  			</td>
+							  			<td>
+							  				Binero AB
+							  			</td>
+							  			<td>
+							  				Domän dittbolag.se
+							  			</td>
+							  			<td>
+							  				<button class="btn yellow fixed inverse">Mottagen</button>
+							  			</td>
+							  			<td>
+							  				<button class="btn green fixed">Betala</button>
+							  			</td>
+							  		</tr>
+
+							  		<tr>
+							  			<td class="">
+							  				12321
+							  			</td>
+							  			<td class="">
+							  				22 Nov 2014
+							  			</td>
+							  			<td>
+							  				22 Dec 2014
+							  			</td>
+							  			<td>
+							  				799kr
+							  			</td>
+							  			<td>
+							  				Telia Sonera AB
+							  			</td>
+							  			<td>
+							  				Telefon
+							  			</td>
+							  			<td>
+							  				<button class="btn green fixed inverse">Betalad</button>
+							  			</td>
+							  		</tr>
+
+
+
+							  		<tr>
+							  			<td class="">
+							  				1233
+							  			</td>
+							  			<td class="">
+							  				9 Nov 2014
+							  			</td>
+							  			<td>
+							  				1 Dec 2014
+							  			</td>
+							  			<td>
+							  				19939kr
+							  			</td>
+							  			<td>
+							  				Konsult AB
+							  			</td>
+							  			<td>
+							  				Redovisning
+							  			</td>
+							  			<td>
+							  				<button class="btn red fixed inverse">Förfallen</button>
+							  			</td>
+							  			</td>
+							  			<td>
+							  				<button class="btn green fixed">Betala</button>
+							  			</td>
+							  		</tr>
+
+							  	
+
+							  	</tbody>
+								</table>
+								
+								
+							</div> <!-- /widget__content -->
+
+						</article><!-- /widget -->
+					</div>
+				</div>
+
+
+
+
+				<!--<div class="row">
+					
+					<div class="col-md-5">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7s-graph"></i><h3>Donut Chart</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+							
+							<div class="widget__content filled widget-ui">
+								
+								<div class="row">
+									<div class="col-md-12 text-center">
+										<div id="chartdiv3" style="width: 100%; height: 362px;"></div>
+									</div>
+								</div>
+								
+								
+							</div> 
+
+						</article>
+					</div>
+
+					<div class="col-md-7">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7f-graph3"></i><h3>Bar Chart</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+
+							<div class="widget__content filled pad20">
+								
+								<div class="row">
+									<div class="col-md-12 text-center btn__showcase2">
+										<div id="chartdiv2" style="width: 100%; height: 362px;"></div>
+									</div>
+
+								</div>
+
+							</div>
+						</article>
+					</div>
+
+
+				</div>
+
+
+				<div class="row">
+					
+					<div class="col-md-6">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7s-graph1"></i><h3>Bubble Chart</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+							
+							<div class="widget__content filled widget-ui">
+								
+								<div class="row">
+									<div class="col-md-12 text-center">
+										<div id="chartdiv4" style="width: 100%; height: 362px;"></div>
+									</div>
+								</div>
+								
+								
+							</div> 
+
+						</article>
+					</div>
+
+					<div class="col-md-6">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7s-graph3"></i><h3>Polar Chart</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+
+							<div class="widget__content filled pad20">
+								
+								<div class="row">
+									<div class="col-md-12 text-center btn__showcase2">
+										<div id="chartdiv5" style="width: 100%; height: 362px;"></div>
+									</div>
+
+								</div>
+
+							</div>
+						</article>
+					</div>
+
+
+				</div> -->
+
+				
+
+
+
+
+		</section> <!-- /content -->
+
+	</div>
+
+
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/amcharts/amcharts.js"></script>
+	<script type="text/javascript" src="js/amcharts/serial.js"></script>
+	<script type="text/javascript" src="js/amcharts/pie.js"></script>
+	<script type="text/javascript" src="js/amcharts/xy.js"></script>
+	<script type="text/javascript" src="js/amcharts/radar.js"></script>
+	<script type="text/javascript" src="js/charts.js"></script>
+</body>
+</html>

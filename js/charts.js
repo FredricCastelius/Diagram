@@ -6,37 +6,43 @@ var lineChartData = [
         "date": "2012-06-01",
         "moneyin": 190234,
         "moneyout": 180234,
-        "profit": 10000
+        "profit": 10000,
+        "currentmoney": 200000
     },
     {
         "date": "2012-07-01",
         "moneyin": 174305,
         "moneyout": 130234,
-        "profit": 44071
+        "profit": 44071,
+        "currentmoney": 180234
     },
     {
        "date": "2012-08-01",
         "moneyin": 140543,
         "moneyout": 16534,
-        "profit": 124009
+        "profit": 124009,
+        "currentmoney": 160234
     },
     {
        "date": "2012-09-01",
         "moneyin": 234040,
         "moneyout": 183234,
-        "profit": 50806
+        "profit": 50806,
+        "currentmoney": 140234
     },
     {
        "date": "2012-10-01",
         "moneyin": 147834,
         "moneyout": 186234,
-        "profit": -38400
+        "profit": -38400,
+        "currentmoney": 100234
     },
     {
         "date": "2012-11-01",
         "moneyin": 157834,
         "moneyout": 203234,
-        "profit": -45400
+        "profit": -45400,
+        "currentmoney": 80234
     }
 ];
 
@@ -126,6 +132,19 @@ AmCharts.ready(function () {
     graph1.bulletSize = 6;
     chart.addGraph(graph1);
     
+    // moneyin
+    var graph = new AmCharts.AmGraph();
+    graph.type = "smoothedLine";
+    graph.valueField = "currentmoney";
+    graph.lineColor = "#ffd769";
+    graph.lineThickness = 3;
+    graph.bullet = "round";
+    //graph.bulletColor = "rgba(0,0,0,0.3)";
+    graph.bulletBorderColor = "#ffd769";
+    graph.bulletBorderAlpha = 1;
+    graph.bulletBorderThickness = 3;
+    graph.bulletSize = 6;
+    chart.addGraph(graph);
     
     // CURSOR
     var chartCursor = new AmCharts.ChartCursor();

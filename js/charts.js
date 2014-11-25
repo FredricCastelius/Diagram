@@ -146,44 +146,20 @@ var chart2 = AmCharts.makeChart("chartdiv2", {
     "theme": "none",
     "colors": ['#1c7dfa', '#53d769'],
     "dataProvider": [{
-        "country": "USA",
-        "visits": 2025
+        "typoeofwork": "Webbproduktion",
+        "typeofworkmoneyin": 180025
     }, {
-        "country": "China",
-        "visits": 1882
+        "typoeofwork": "Serverhantering",
+        "typeofworkmoneyin": 22082
     }, {
-        "country": "Japan",
-        "visits": 1809
+        "typoeofwork": "Webbhotell",
+        "typeofworkmoneyin": 18309
     }, {
-        "country": "Germany",
-        "visits": 1322
+        "typoeofwork": "Domänhantering",
+        "typeofworkmoneyin": 13422
     }, {
-        "country": "UK",
-        "visits": 1122
-    }, {
-        "country": "France",
-        "visits": 1114
-    }, {
-        "country": "India",
-        "visits": 984
-    }, {
-        "country": "Spain",
-        "visits": 711
-    }, {
-        "country": "Netherlands",
-        "visits": 665
-    }, {
-        "country": "Russia",
-        "visits": 580
-    }, {
-        "country": "South Korea",
-        "visits": 443
-    }, {
-        "country": "Canada",
-        "visits": 441
-    }, {
-        "country": "Brazil",
-        "visits": 395
+        "typoeofwork": "E-Posthantering",
+        "typeofworkmoneyin": 3935
     }],
     "valueAxes": [{
         "gridAlpha": 0.2,
@@ -201,14 +177,72 @@ var chart2 = AmCharts.makeChart("chartdiv2", {
         "fillAlphas": 0.8,
         "lineAlpha": 0.2,
         "type": "column",
-        "valueField": "visits"      
+        "valueField": "typeofworkmoneyin"      
     }],
     "chartCursor": {
         "categoryBalloonEnabled": false,
         "cursorAlpha": 0,
         "zoomable": false
     },
-    "categoryField": "country",
+    "categoryField": "typoeofwork",
+    "categoryAxis": {
+        "gridPosition": "start",
+        "gridAlpha": 0,
+         "tickPosition":"start",
+         "tickLength":0,
+         "axisAlpha":0.5,
+         "fontSize":9,
+         "axisColor": "rgba(255,255,255,0.5)",
+         "color": "rgba(255,255,255,0.5)",
+
+    },
+    "exportConfig":{
+      "menuTop": 0,
+      "menuItems": [{
+      "icon": '/lib/3/images/export.png',
+      "format": 'png'     
+      }]  
+    }
+});
+
+var chart2 = AmCharts.makeChart("chartdiv22", {
+    "type": "serial",
+    "theme": "none",
+    "colors": ['#1c7dfa', '#53d769'],
+    "dataProvider": [{
+        "costumer": "Badass business AB",
+        "costumermoneyin": 120025
+    }, {
+        "costumer": "Super duper AB",
+        "costumermoneyin": 22082
+    }, {
+        "costumer": "Insanely good goods AB",
+        "costumermoneyin": 18309
+    }],
+    "valueAxes": [{
+        "gridAlpha": 0.2,
+        "dashLength": 0,
+        "axisAlpha":0.5,
+         "fontSize":9,
+         "axisColor": "rgba(255,255,255,0.5)",
+         "color": "rgba(255,255,255,0.5)",
+         "gridColor": "rgba(255,255,255,0.5)"
+    }],
+    "gridAboveGraphs": true,
+    "startDuration": 1,
+    "graphs": [{
+        "balloonText": "[[category]]: <b>[[value]]</b>",
+        "fillAlphas": 0.8,
+        "lineAlpha": 0.2,
+        "type": "column",
+        "valueField": "costumermoneyin"      
+    }],
+    "chartCursor": {
+        "categoryBalloonEnabled": false,
+        "cursorAlpha": 0,
+        "zoomable": false
+    },
+    "categoryField": "costumer",
     "categoryAxis": {
         "gridPosition": "start",
         "gridAlpha": 0,
@@ -235,10 +269,10 @@ var chart3 = AmCharts.makeChart("chartdiv3", {
     "theme": "none",
     "colors": ['#1c7dfa', '#53d769'],
     "dataProvider": [{
-        "title": "New",
+        "title": "Nya",
         "value": 4852
     }, {
-        "title": "Returning",
+        "title": "Återkommande",
         "value": 9899
     }],
     "titleField": "title",

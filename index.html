@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="diagramApp">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +18,24 @@
 	
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-resource.min.js"></script>
+	<script type="text/javascript" src="js/angular-app.js"></script>
+	<script type="text/javascript" src="js/angular-controllers.js"></script>
+	<script type="text/javascript" src="js/angular-services.js"></script>
+
 
 	<meta name="robots" content="noindex">
 	
 </head>
-<body class="bg1">
+<body class="bg1"  ng-controller="diagramGetDataController">
+	<ul ng-repeat="invoice in invoices">
+		<li>{{invoice.invoice_no}}</li>
+		<li>{{invoice.customer_name}}</li>
+		<li>{{invoice.due_date}}</li>
+		<li>{{invoice.total_sum}}</li>
+		<li>{{invoice.state}}</li>
+	</ul>
+	
 	
 	<div class="wrapper">
 		
